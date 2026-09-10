@@ -1,0 +1,5 @@
+# Improva — allow all crawlers
+User-agent: *
+Allow: /
+
+Sitemap: https://improva.fit/sitemap.xml

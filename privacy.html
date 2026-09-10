@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy | Improva</title>
+  <meta name="description" content="How Improva handles your data: local-only storage, no accounts, no tracking, no ads.">
+  <meta name="theme-color" content="#39D353">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Improva">
+  <meta property="og:title" content="Privacy Policy | Improva">
+  <meta property="og:description" content="Local-only storage, no accounts, no tracking, no ads.">
+  <meta property="og:url" content="https://improva.fit/privacy.html">
+  <meta property="og:image" content="https://improva.fit/assets/og-image.png"> <!-- TODO: og-image.png asset -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Privacy Policy | Improva">
+  <meta name="twitter:description" content="Local-only storage, no accounts, no tracking, no ads.">
+  <meta name="twitter:image" content="https://improva.fit/assets/og-image.png"> <!-- TODO: og-image.png asset -->
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.png" sizes="any"> <!-- TODO: real PNG favicon fallback -->
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png"> <!-- TODO: real 180x180 apple-touch-icon -->
+  <link rel="canonical" href="https://improva.fit/privacy.html">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html">
+        <span class="brand-mark has-img" aria-hidden="true"><img src="assets/logo.svg" alt="" width="26" height="26"></span>
+        Improva
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="doc">
+    <div class="container doc-wrap">
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: 17 July 2026</p>
+
+      <div class="doc-content">
+        <p>This Privacy Policy explains how Improva ("Improva", "the App", "we", "us", or "our") handles information when you use the App. We have written it to be read and understood, not just to satisfy a legal requirement. If anything here is unclear, please contact us at the address at the end of this document.</p>
+
+        <h2>The short version</h2>
+        <p>Improva is built to keep your information on your device. We do not operate servers that store your data, we have no user accounts, and we do not run analytics, advertising, or third-party tracking of any kind. Your workouts, food logs, health figures, schedule, and the apps you choose to block never leave your phone as a result of normal use.</p>
+        <p>There is exactly one situation in which information leaves your device during ordinary use. When you scan a packaged food's barcode, the barcode number is sent to the Open Food Facts nutrition database to look up that product. That request contains the barcode and basic app identification, and nothing about you or your other data. This is described in full below.</p>
+
+        <h2>Who is responsible for your information</h2>
+        <p>Improva is developed and provided by an independent developer based in Australia. Because the App stores your information locally on your device rather than on our systems, you remain in direct control of that information at all times. Where privacy law refers to a "data controller", that role is limited to the narrow processing described in this policy.</p>
+
+        <h2>Information stored on your device</h2>
+        <p>The App stores the following on your device using Apple's SwiftData framework and a private App Group container. We do not receive copies of any of it.</p>
+        <ul>
+          <li><strong>Nutrition profile:</strong> sex, age, height, weight, body-fat percentage, activity level, dietary goal and diet type, optional supplementation status, and optional health-related flags you choose to enter.</li>
+          <li><strong>Training and running profiles:</strong> training experience, available equipment, days and time available, optional injury history, optional pregnancy or cardiovascular flags, and optional strength or race benchmarks.</li>
+          <li><strong>Workout, cardio, and set history:</strong> exercises, sets, reps, weights, durations, distances, pace, heart-rate summaries, and dates.</li>
+          <li><strong>Food and nutrition logs:</strong> what you logged, when, quantities, macros, and micronutrients.</li>
+          <li><strong>Plans and schedules:</strong> scheduled workouts, cardio, focus blocks, meal plans, and generated training programs.</li>
+          <li><strong>Gym locations:</strong> the name, coordinates, and radius you set for each gym, used for the optional "I'm at the gym" check.</li>
+          <li><strong>Screen Time selection:</strong> the apps and categories you choose to block are stored only as an opaque token managed by Apple's Family Controls framework. Improva cannot read this token and never learns which apps you selected.</li>
+          <li><strong>Preferences and app state:</strong> units, notification and reset-time settings, theme, streak and progress data, and your emergency code, which is stored only as a salted, irreversible cryptographic hash and never as the code itself.</li>
+        </ul>
+
+        <h2>Information that leaves your device</h2>
+        <p>We want to be precise about this rather than claim more than is true.</p>
+        <ul>
+          <li><strong>Open Food Facts barcode lookups.</strong> When you use the barcode scanner to add a packaged food, the App sends the scanned barcode number to the Open Food Facts API (<code>world.openfoodfacts.org</code>) to retrieve that product's nutrition information. The request includes the barcode and a standard identification header containing the app name, version, and our contact email. It does not include your profile, logs, location, health data, or any identifier for you. As with any internet request, Open Food Facts and its network providers will see the originating IP address. Open Food Facts is an independent, open-source project with its own privacy practices; see <a href="https://world.openfoodfacts.org/privacy">world.openfoodfacts.org/privacy</a>. If you never scan a barcode, this request never happens.</li>
+          <li><strong>Backup files you create.</strong> If you use the backup feature, the App writes a file containing your data, including health-related figures, to the destination you choose (for example Files, iCloud Drive, or AirDrop). This file is created at your request and handed to you; we never receive it. Because it contains personal health information and is not encrypted by the App, store and share it with the same care you would any sensitive document.</li>
+          <li><strong>Apple system services.</strong> HealthKit, iCloud, notifications, and similar features are provided by Apple and governed by Apple's own privacy policy. Any syncing they perform is between you and Apple, not us.</li>
+        </ul>
+        <p>Aside from the above, no feature of the App transmits your information off your device. Friend Lock pairing and workout or program sharing work through on-device links and do not use any server operated by us.</p>
+
+        <h2>Apple frameworks we use</h2>
+        <ul>
+          <li><strong>Family Controls and Managed Settings.</strong> Used so you can select apps and categories to block during scheduled sessions or focus blocks. The selection is an opaque token only iOS can interpret; we never see it or transmit it.</li>
+          <li><strong>HealthKit.</strong> With your permission, the App may read data such as active energy, heart rate and heart-rate variability, resting heart rate, sleep duration, step count, body mass, body-fat percentage, walking, running, cycling and swimming distance, and workout history, to support the running coach, cardio trends and readiness, nutrition, and history features. The App writes workouts or nutrition back to HealthKit only if you explicitly enable that in Settings. HealthKit data is used on your device and is never sent to us. In line with Apple's rules, HealthKit data is never used for advertising or shared with third parties.</li>
+          <li><strong>Core Location.</strong> When you tap "I'm at the gym", the App performs a single, when-in-use location check to confirm whether you are within the radius you defined for that gym. The result gates the workout start screen. Your location is not stored, logged, or transmitted.</li>
+          <li><strong>ActivityKit and notifications.</strong> Workout and cardio timers appear on your Lock Screen, and the App schedules local reminders such as the weekly planning prompt. These run on your device; no data is sent to us.</li>
+        </ul>
+
+        <h2>Diagnostics</h2>
+        <p>The App can record crash and performance diagnostics locally using Apple's MetricKit, stored in a small on-device log. Nothing is transmitted automatically. This information is shared only if you choose to export it yourself from Settings, for example to help us investigate a problem you report.</p>
+
+        <h2>What we do not do</h2>
+        <ul>
+          <li>We do not sell or rent your information.</li>
+          <li>We do not use analytics or usage telemetry.</li>
+          <li>We do not serve advertising or use advertising or marketing identifiers.</li>
+          <li>We do not embed third-party SDKs that collect data about you.</li>
+          <li>We do not track you across apps or websites.</li>
+          <li>We do not share your information with advertisers, data brokers, insurers, employers, or analytics providers.</li>
+        </ul>
+
+        <h2>Children</h2>
+        <p>Improva is not directed to children under 13, and we do not knowingly collect information from them. Users under 18 should use the App with the involvement of a parent or guardian, and certain content, including supplement guidance, is presented only to users 18 and older. If you believe a child has used the App in a way that concerns you, contact us and we will help, though because the data resides on the child's device, deletion is performed there.</p>
+
+        <h2>Health information</h2>
+        <p>Improva processes fitness and nutrition information you provide, and health data you permit it to read from HealthKit, solely to deliver the App's features on your device. This information is not medical advice (see the Terms of Service), is not sold or shared, and is not used for any purpose other than operating the features you use.</p>
+
+        <h2>Your rights</h2>
+        <p>Depending on where you live, you may have rights under the Australian Privacy Principles, the EU/UK GDPR, the California Consumer Privacy Act, or similar laws, such as the right to access, correct, delete, or export your personal information. Because Improva keeps your information on your device, you exercise these rights directly: you can view, edit, export (via backup), and permanently delete your data at any time within the App, without needing to ask us. We do not hold a separate copy to produce or erase. If you have a question about your rights, contact us and we will help as far as we are able.</p>
+
+        <h2>Data retention and deletion</h2>
+        <p>Your information remains on your device until you remove it. You can erase it using Settings, then Reset all data in the App, or by deleting the App from your device. Deletion is immediate and cannot be undone by us, since we hold no copy. Backup files you have created remain wherever you saved them until you delete them.</p>
+
+        <h2>Security</h2>
+        <p>Your information is protected by your device's own security, including its passcode and encryption. Sensitive values such as your emergency code are stored only as a salted, irreversible hash. Because we operate no servers holding your data, there is no central database for an attacker to breach.</p>
+
+        <h2>Changes to this policy</h2>
+        <p>We may update this policy as the App evolves or as the law requires. When we make a material change, we will update the effective date above and surface the change within the App. Your continued use after an update means you accept the revised policy.</p>
+
+        <h2>Contact</h2>
+        <p>If you have questions or concerns about this Privacy Policy or your information, contact us at <a href="mailto:support@improva.fit">support@improva.fit</a>.</p>
+        <p>This policy is governed by the laws of Australia.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <nav class="footer-links" aria-label="Footer">
+        <a href="privacy.html">Privacy</a>
+        <span class="footer-sep" aria-hidden="true">·</span>
+        <a href="terms.html">Terms</a>
+        <span class="footer-sep" aria-hidden="true">·</span>
+        <a href="support.html">Support</a>
+        <span class="footer-sep" aria-hidden="true">·</span>
+        <a href="mailto:support@improva.fit">support@improva.fit</a>
+      </nav>
+      <span class="copyright">© 2026 Improva</span>
+    </div>
+    <div class="container">
+      <p class="footer-disclaimer">Improva provides general fitness and nutrition estimates, not medical advice. Consult a professional before starting a new program.</p>
+    </div>
+  </footer>
+</body>
+</html>
