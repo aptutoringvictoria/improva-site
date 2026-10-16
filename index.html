@@ -106,10 +106,10 @@
             </span>
           </div>
         </div>
-        <div class="hero-art" aria-label="App preview placeholders">
-          <div class="placeholder app-icon" role="img" aria-label="Placeholder for app icon">app icon</div>
-          <div class="placeholder phone-shot" role="img" aria-label="Placeholder for app screenshot 1">screenshot</div>
-          <div class="placeholder phone-shot" role="img" aria-label="Placeholder for app screenshot 2">screenshot</div>
+        <div class="hero-art">
+          <img class="app-icon-img" src="assets/logo.png" alt="Improva app icon" width="512" height="512">
+          <img class="phone-shot shot" src="assets/screenshot-1.webp" alt="Improva Home screen: today's workout done, an evening run planned, and the day's calories and macros" width="660" height="1434">
+          <img class="phone-shot shot" src="assets/screenshot-2.webp" alt="Apps locked until you check in at your gym for the workout you planned" width="660" height="1434">
         </div>
       </div>
     </section>
@@ -122,26 +122,31 @@
         <div class="features">
           <article class="feature">
             <div class="icon" aria-hidden="true">01</div>
-            <h3>Accountability you set for yourself.</h3>
-            <p>Pick the apps that distract you. If you skip a workout or cardio session you scheduled, those apps lock from the time you planned it until the end of that day. Plans change, so you can cancel a session ahead of time. Start a session and leave early, and they stay locked for longer — you choose how long. It uses Apple's Screen Time, and Improva never learns which apps you chose. Accountability is a Premium feature, and every new install gets it free for 3 hours.</p>
+            <h3>Apps unlock when you show up at the gym.</h3>
+            <p>Pick the apps that distract you. On a day you've scheduled a workout, they lock from the time you planned it; check in at your gym and start the session, and they open while you train. Skip it, and they stay locked until the end of that day. Plans change, so you can cancel a session ahead of time. Start a session and leave early, and they stay locked for longer — you choose how long. It uses Apple's Screen Time, and Improva never learns which apps you chose. Accountability is a Premium feature, and every new install gets it free for 3 hours.</p>
           </article>
           <article class="feature">
             <div class="icon" aria-hidden="true">02</div>
+            <h3>A friend can hold your key.</h3>
+            <p>With Friend Lock, someone you trust holds the key to a lock you set. They send it when they're ready, and your own emergency code opens it too. Friend Lock is part of Premium; holding a friend's key is free.</p>
+          </article>
+          <article class="feature">
+            <div class="icon" aria-hidden="true">03</div>
             <h3>Real training, not gimmicks.</h3>
             <p>A running coach that builds a full plan for your goal — from couch-to-5K to a marathon or ultra — and a personal trainer that generates progressive strength programs that adapt as you log your sets.</p>
           </article>
           <article class="feature">
-            <div class="icon" aria-hidden="true">03</div>
+            <div class="icon" aria-hidden="true">04</div>
             <h3>Cardio &amp; workouts, tracked.</h3>
             <p>Live GPS cardio with pace and heart-rate cues, a guided workout timer, and Apple Watch support.</p>
           </article>
           <article class="feature">
-            <div class="icon" aria-hidden="true">04</div>
+            <div class="icon" aria-hidden="true">05</div>
             <h3>Nutrition, simplified.</h3>
             <p>Estimate your daily targets, log food (even by voice), and plan a week of meals. Estimates to guide you — not medical advice.</p>
           </article>
           <article class="feature">
-            <div class="icon" aria-hidden="true">05</div>
+            <div class="icon" aria-hidden="true">06</div>
             <h3>Private by design.</h3>
             <p>Your training, food and health data stay on your device. No account, no tracking, no ads. Back up your data to a file you own, whenever you like.</p>
           </article>
@@ -161,7 +166,7 @@
           </div>
           <div class="ev-item">
             <h3><span class="dot" aria-hidden="true"></span>Weekly planning</h3>
-            <p>Lay out workouts, cardio, and focus blocks across the week in one place. Your plan drives your accountability and your streak, and each Sunday the app prompts you to plan the week ahead.</p>
+            <p>Lay out workouts, cardio, and focus blocks across the week in one place. Your plan drives your accountability and your streak, and with accountability on, Improva can remind you an hour before the weekly planning deadline you choose.</p>
           </div>
           <div class="ev-item">
             <h3><span class="dot" aria-hidden="true"></span>Workouts &amp; guided timer</h3>
@@ -196,8 +201,8 @@
             <p>Track cardio from your wrist, mirror the workout timer, and glance at a complication showing whether your apps are locked, your next session, and your streak.</p>
           </div>
           <div class="ev-item">
-            <h3><span class="dot" aria-hidden="true"></span>Widgets, Siri &amp; reminders</h3>
-            <p>Home- and lock-screen widgets for your calorie ring, streak, and next session; ask Siri to "start my workout" and Improva opens at today's session; and timely reminders to plan and to train.</p>
+            <h3><span class="dot" aria-hidden="true"></span>Widgets &amp; Siri</h3>
+            <p>Home- and lock-screen widgets for your calorie ring, streak, and next session. Ask Siri to "start my workout" and Improva opens at today's session.</p>
           </div>
           <div class="ev-item">
             <h3><span class="dot" aria-hidden="true"></span>Backup &amp; restore</h3>
@@ -232,15 +237,24 @@
       </div>
     </section>
 
-    <!-- ===== Screenshot gallery placeholders ===== -->
+    <!-- ===== Screenshot gallery ===== -->
     <section class="section section-alt" aria-labelledby="gallery-h">
       <div class="container">
         <h2 id="gallery-h">A look inside</h2>
-        <p class="lede">Screenshots coming soon.</p>
-        <div class="features">
-          <div class="placeholder phone-shot" role="img" aria-label="Placeholder for app screenshot 1">screenshot 1</div>
-          <div class="placeholder phone-shot" role="img" aria-label="Placeholder for app screenshot 2">screenshot 2</div>
-          <div class="placeholder phone-shot" role="img" aria-label="Placeholder for app screenshot 3">screenshot 3</div>
+        <p class="lede">Plan the week, see what you're really eating, and shop from one list.</p>
+        <div class="features gallery">
+          <figure class="shot-fig">
+            <img class="shot" src="assets/screenshot-3.webp" alt="Weekly planner with runs and strength sessions across the week" width="660" height="1434" loading="lazy">
+            <figcaption>Runs and lifts in one weekly planner</figcaption>
+          </figure>
+          <figure class="shot-fig">
+            <img class="shot" src="assets/screenshot-4.webp" alt="Micronutrient breakdown for the day, with vitamin D short of target" width="660" height="1434" loading="lazy">
+            <figcaption>Micronutrients, not just macros</figcaption>
+          </figure>
+          <figure class="shot-fig">
+            <img class="shot" src="assets/screenshot-5.webp" alt="Shopping list built from a week of meals, with combined quantities" width="660" height="1434" loading="lazy">
+            <figcaption>A week of meals, one shopping list</figcaption>
+          </figure>
         </div>
       </div>
     </section>

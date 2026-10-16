@@ -28,6 +28,6 @@ placeholder boxes / the generated SVGs, so nothing breaks.
   favicon.png          PNG favicon fallback (e.g. 32x32 or 180x180).
   apple-touch-icon.png Apple touch icon (180x180), linked from every page.
 
-The hero + gallery screenshots use styled placeholder boxes. When you add the
-real screenshots, swap the placeholder <div class="placeholder ...">s in
-index.html for <img> tags (keep the alt text).
+Screenshots are now real: screenshot-1 to screenshot-5 (.webp, 660x1434),
+made from the Simulator captures in screenshots/. Hero uses logo.png as the
+app icon plus screenshot-1 and -2; the gallery uses screenshot-3 to -5.

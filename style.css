@@ -232,6 +232,34 @@ h1, h2, h3 { line-height: 1.2; color: var(--ink); }
 }
 .phone-shot { aspect-ratio: 9 / 19; }
 
+/* ---------- Real app screenshots ---------- */
+.shot {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 660 / 1434;
+  border: 5px solid var(--dark);
+  border-radius: 28px;
+  background: var(--dark);
+  box-shadow: 0 12px 32px rgba(15, 23, 32, 0.16);
+}
+.hero-art .app-icon-img {
+  grid-column: 1 / -1;
+  width: 96px;
+  height: 96px;
+  border-radius: 22px;
+  border: 1px solid var(--line);
+  box-shadow: 0 6px 18px rgba(15, 23, 32, 0.10);
+}
+.gallery .shot-fig { margin: 0 auto; width: 100%; max-width: 300px; }
+.gallery figcaption {
+  margin-top: 14px;
+  text-align: center;
+  color: var(--ink-soft);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
 /* ---------- Sections ---------- */
 .section { padding: 56px 0; }
 .section-alt { background: var(--bg-soft); }
@@ -462,6 +490,7 @@ h1, h2, h3 { line-height: 1.2; color: var(--ink); }
   .features { grid-template-columns: repeat(3, 1fr); }
   .everything { grid-template-columns: repeat(3, 1fr); }
   .hero-art .app-icon { height: 110px; }
+  .hero-art .app-icon-img { width: 110px; height: 110px; }
 }
 
 /* Respect reduced motion */
