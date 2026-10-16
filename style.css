@@ -125,6 +125,21 @@ h1, h2, h3 { line-height: 1.2; color: var(--ink); }
 }
 .nav-links a:hover { background: var(--bg-soft); color: var(--ink); }
 .nav-links a[aria-current="page"] { color: var(--green-700); font-weight: 600; }
+/* A4-WEB-DES-04: below ~480 px the brand plus four links wrapped into a
+   2 x 2 block and the sticky header grew to ~110 px. "Home" goes (the brand
+   already links home), the padding tightens, and the header scrolls away
+   rather than sticking if a long word still forces a second line. */
+@media (max-width: 479px) {
+  .site-header { position: static; }
+  .nav { padding: 10px 14px; gap: 8px; }
+  .nav-links { gap: 2px; }
+  .nav-links a { padding: 8px 7px; font-size: 0.9rem; }
+  .nav-links a[href="index.html"] { display: none; }
+}
+@media (max-width: 359px) {
+  .nav { padding: 10px 12px; gap: 6px; }
+  .nav-links a { padding: 8px 5px; }
+}
 
 /* ---------- Buttons / badges ---------- */
 .btn {
@@ -202,6 +217,12 @@ h1, h2, h3 { line-height: 1.2; color: var(--ink); }
   color: var(--green-700);
   font-size: 0.95rem;
   text-transform: none;
+}
+.hero .hero-offer {
+  font-size: 1rem;
+  color: var(--ink);
+  max-width: 46ch;
+  margin: -14px 0 22px;
 }
 .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
 
