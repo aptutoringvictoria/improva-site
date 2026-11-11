@@ -3,25 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Improva — Earn your screen time. Train first.</title>
-  <meta name="description" content="Improva locks the apps that distract you for the rest of the day when you skip the workout you planned — plus a running coach, strength programs, cardio tracking, and nutrition, all in one app.">
-  <meta name="theme-color" content="#39D353">
+  <title>Improva | Earn your screen time. Train first.</title>
+  <meta name="description" content="Improva locks the apps that distract you for the rest of the day when you skip the workout you planned. It also has a running coach, strength programs, cardio tracking, and nutrition, all in one app.">
+  <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1C1C1E" media="(prefers-color-scheme: dark)">
 
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Improva">
-  <meta property="og:title" content="Improva — Earn your screen time. Train first.">
-  <meta property="og:description" content="Locks the apps that distract you when you skip the workout you planned. A running coach, strength programs, cardio, and nutrition — private by design.">
+  <meta property="og:title" content="Improva | Earn your screen time. Train first.">
+  <meta property="og:description" content="Locks the apps that distract you when you skip the workout you planned. A running coach, strength programs, cardio, and nutrition, all private by design.">
   <meta property="og:url" content="https://improva.fit/">
   <meta property="og:image" content="https://improva.fit/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Improva app icon and Home screen, with the line: Earn your screen time. Train first.">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Improva — Earn your screen time. Train first.">
+  <meta name="twitter:title" content="Improva | Earn your screen time. Train first.">
   <meta name="twitter:description" content="Locks the apps that distract you when you skip the workout you planned. Private by design.">
   <meta name="twitter:image" content="https://improva.fit/assets/og-image.png">
+  <meta name="twitter:image:alt" content="Improva app icon and Home screen, with the line: Earn your screen time. Train first.">
 
   <link rel="icon" href="assets/favicon.png" type="image/png" sizes="64x64">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="canonical" href="https://improva.fit/">
+  <link rel="preload" href="assets/fonts/ArchivoSemiExpanded-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
 
   <!-- Structured data — TODO: App Store URL once the listing exists -->
@@ -32,7 +38,7 @@
     "name": "Improva",
     "applicationCategory": "HealthApplication",
     "operatingSystem": "iOS",
-    "description": "Accountability-first fitness app for iPhone. Locks the apps that distract you for the rest of the day when you skip the workout you planned, with a science-informed running coach, adaptive strength programs, live cardio tracking, and nutrition — all private and on your device.",
+    "description": "Accountability-first fitness app for iPhone. Locks the apps that distract you for the rest of the day when you skip the workout you planned, with a science-informed running coach, adaptive strength programs, live cardio tracking, and nutrition, all private and on your device.",
     "url": "https://improva.fit/",
     "offers": {
       "@type": "AggregateOffer",
@@ -94,26 +100,34 @@
     <!-- ===== Hero ===== -->
     <section class="hero">
       <div class="container hero-grid">
-        <div>
+        <div class="hero-copy">
           <span class="eyebrow">Improva</span>
-          <h1>Earn your screen time. Train first.</h1>
-          <p class="subhead">Improva locks the apps that distract you for the rest of the day when you skip the workout you planned — plus a science-informed running coach, strength programs, cardio tracking, and nutrition, all in one app.</p>
+          <h1><span class="line">Earn your screen time.</span> <span class="line">Train first.</span></h1>
+          <p class="subhead">Improva locks the apps that distract you for the rest of the day when you skip the workout you planned. It also has a science-informed running coach, strength programs, cardio tracking, and nutrition, all in one app.</p>
           <!-- A4-WEB-MKT-02: the trial and the price, where people decide. Figures from CLAIMS_SCHEDULE.md. -->
-          <p class="hero-offer">Free to download. Every install gets all of Premium free for 3 hours after setup, with no card and nothing to cancel. Then Premium is US$29.99 a year or US$44.99 once.</p>
+          <p class="hero-offer">Free to download. Every iPhone gets all of Premium free for 3 hours after setup, once, with no card and nothing to cancel. Then Premium is US$29.99 a year or US$44.99 once.</p>
           <div class="hero-cta">
+            <!-- A4-WEB-DES-06: until launch the hero's working action is the notify email (the badge does nothing). -->
+            <a class="btn btn-primary" href="#notify-h">Get notified at launch</a>
             <!-- Placeholder badge — no App Store link yet. TODO: real App Store URL -->
-            <span class="badge" role="img" aria-label="Coming to the App Store" aria-disabled="true">
+            <span class="badge">
               <small>Coming to the</small>
               <strong>App Store</strong>
             </span>
-            <!-- A4-WEB-DES-06: until launch the hero's working action is the notify email (the badge does nothing). -->
-            <a class="btn btn-primary" href="#notify-h">Get notified at launch</a>
+            <!--
+              At launch: replace the placeholder above with Apple's official badge (self-hosted in assets/,
+              downloaded from Apple's marketing tools; Apple requires it to link to the App Store listing):
+            <a class="store-badge" href="https://apps.apple.com/app/idYOUR_APP_ID">
+              <picture>
+                <source srcset="assets/app-store-badge-white.svg" media="(prefers-color-scheme: dark)">
+                <img src="assets/app-store-badge-black.svg" alt="Download on the App Store" width="120" height="40">
+              </picture>
+            </a>
+            -->
           </div>
         </div>
         <div class="hero-art">
-          <img class="app-icon-img" src="assets/logo.png" alt="Improva app icon" width="512" height="512">
-          <img class="phone-shot shot" src="assets/screenshot-1.webp" alt="Improva Home screen: today's workout done, an evening run planned, and the day's calories and macros" width="660" height="1434">
-          <img class="phone-shot shot" src="assets/screenshot-2.webp" alt="Apps locked until you check in at your gym for the workout you planned" width="660" height="1434">
+          <img class="phone-shot shot" src="assets/screenshot-1.webp" alt="Improva Home screen: today's workout done, an evening run planned, and the day's calories and macros" width="660" height="1434" fetchpriority="high">
         </div>
       </div>
     </section>
@@ -121,37 +135,38 @@
     <!-- ===== Features (headline pillars) ===== -->
     <section class="section" aria-labelledby="features-h">
       <div class="container">
-        <h2 id="features-h">One app. Everything to train — and follow through.</h2>
+        <h2 id="features-h">Everything you need to train and follow through, in one app.</h2>
         <p class="lede">Accountability, coaching, tracking, and nutrition, built to keep your focus where you want it.</p>
-        <div class="features">
+        <div class="feature-lead">
+          <div class="feature-lead-copy">
+            <article class="feature">
+              <h3>Apps unlock when you show up at the gym.</h3>
+              <p>Pick the apps that distract you. On a day you've scheduled a workout, they lock from the time you planned it; check in at your gym and start the session, and they open while you train. Skip it, and they stay locked until the end of that day. Plans change, so you can cancel a session ahead of time. Start a session and leave early, and they stay locked for longer. You choose how long. It uses Apple's Screen Time, and Improva never learns which apps you chose. Accountability is a Premium feature, free for 3 hours, once per iPhone.</p>
+            </article>
+            <article class="feature">
+              <h3>Someone you trust can hold your key.</h3>
+              <p>With Spare Key, you start a lock and give someone you trust the key: your apps stay locked until they send it to you. Your own emergency code ends it too. Spare Key is part of Premium; holding someone's spare key is free.</p>
+            </article>
+          </div>
+          <figure class="feature-lead-shot">
+            <img class="phone-shot shot" src="assets/screenshot-2.webp" alt="Apps locked until you check in at your gym for the workout you planned" width="660" height="1434" loading="lazy">
+          </figure>
+        </div>
+        <div class="features features-rest">
           <article class="feature">
-            <div class="icon" aria-hidden="true">01</div>
-            <h3>Apps unlock when you show up at the gym.</h3>
-            <p>Pick the apps that distract you. On a day you've scheduled a workout, they lock from the time you planned it; check in at your gym and start the session, and they open while you train. Skip it, and they stay locked until the end of that day. Plans change, so you can cancel a session ahead of time. Start a session and leave early, and they stay locked for longer — you choose how long. It uses Apple's Screen Time, and Improva never learns which apps you chose. Accountability is a Premium feature, and every new install gets it free for 3 hours.</p>
+            <h3>Real training, no shortcuts.</h3>
+            <p>A running coach that builds a full plan for your goal (from couch-to-5K to a marathon or ultra), and a personal trainer that generates progressive strength programs that adapt as you log your sets.</p>
           </article>
           <article class="feature">
-            <div class="icon" aria-hidden="true">02</div>
-            <h3>Someone you trust can hold your key.</h3>
-            <p>With Spare Key, you start a lock and give someone you trust the key: your apps stay locked until they send it to you. Your own emergency code ends it too. Spare Key is part of Premium; holding someone's spare key is free.</p>
-          </article>
-          <article class="feature">
-            <div class="icon" aria-hidden="true">03</div>
-            <h3>Real training, not gimmicks.</h3>
-            <p>A running coach that builds a full plan for your goal — from couch-to-5K to a marathon or ultra — and a personal trainer that generates progressive strength programs that adapt as you log your sets.</p>
-          </article>
-          <article class="feature">
-            <div class="icon" aria-hidden="true">04</div>
-            <h3>Cardio &amp; workouts, tracked.</h3>
+            <h3>Track your cardio and workouts.</h3>
             <p>Live GPS cardio with pace and heart-rate cues, a guided workout timer, and Apple Watch support.</p>
           </article>
           <article class="feature">
-            <div class="icon" aria-hidden="true">05</div>
-            <h3>Nutrition, simplified.</h3>
-            <p>Estimate your daily targets, log food (even by voice), and plan a week of meals. Estimates to guide you — not medical advice.</p>
+            <h3>Log food and plan your meals.</h3>
+            <p>Estimate your daily targets, log food (even by voice), and plan a week of meals. These are estimates to guide you, not medical advice.</p>
           </article>
           <article class="feature">
-            <div class="icon" aria-hidden="true">06</div>
-            <h3>Private by design.</h3>
+            <h3>Made to keep your data private.</h3>
             <p>Your training, food and health data stay on your device. No account, no tracking, no ads. Back up your data to a file you own, whenever you like.</p>
           </article>
         </div>
@@ -162,7 +177,7 @@
     <section class="section section-alt" aria-labelledby="everything-h">
       <div class="container">
         <h2 id="everything-h">Everything inside</h2>
-        <p class="lede">A closer look at what you get — every part shipped, all on your device. Most of it stays free; accountability, the plan generators and cardio trends are Premium.</p>
+        <p class="lede">A closer look at what you get: every part shipped, all on your device. Most of it stays free; accountability, the plan generators and cardio trends are Premium.</p>
         <div class="everything">
           <div class="ev-item">
             <h3><span class="dot" aria-hidden="true"></span>Accountability &amp; app blocking</h3>
@@ -174,15 +189,15 @@
           </div>
           <div class="ev-item">
             <h3><span class="dot" aria-hidden="true"></span>Workouts &amp; guided timer</h3>
-            <p>Build your own templates (simple or detailed with sets, reps, rest, and supersets) or start from an evidence-based library. A guided timer runs every set and rest, plays its cues over your music without stopping it, and logs what you lifted. If your machine is taken, it re-orders or swaps the exercise on the spot.</p>
+            <p>Build your own workouts with exercises, sets, reps, rest and supersets (or a quick time-based one), start from an evidence-based workout library, and turn your own workouts into a weekly split. A guided timer runs every set and rest, plays its cues over your music without stopping it, and logs what you lifted. If your machine is taken, it re-orders or swaps the exercise on the spot.</p>
           </div>
           <div class="ev-item">
             <h3><span class="dot" aria-hidden="true"></span>Personal trainer</h3>
-            <p>Answer a few questions and get a multi-week progressive strength program. It applies double-progression as you log sets, schedules deloads, and lets you build or share your own split.</p>
+            <p>Answer a few questions and get a multi-week progressive strength program. It applies double-progression as you log sets, schedules deloads, and lets you share a split or workout with a friend.</p>
           </div>
           <div class="ev-item">
             <h3><span class="dot" aria-hidden="true"></span>Running coach</h3>
-            <p>Pick your goal — couch-to-5K through marathon, ultra, a time target, general fitness, or team pre-season — and get a full plan grounded in established running science, with paces, heart-rate zones, and safe progression.</p>
+            <p>Pick your goal (couch-to-5K through marathon, ultra, a time target, general fitness, or team pre-season) and get a full plan grounded in established running science, with paces, heart-rate zones, and safe progression.</p>
           </div>
           <div class="ev-item">
             <h3><span class="dot" aria-hidden="true"></span>Live cardio</h3>
@@ -198,7 +213,7 @@
           </div>
           <div class="ev-item">
             <h3><span class="dot" aria-hidden="true"></span>Streaks</h3>
-            <p>Complete the training you planned each week and your streak grows — a simple, honest nudge to keep showing up.</p>
+            <p>Complete the training you planned each week and your streak grows. It's a simple, honest nudge to keep showing up.</p>
           </div>
           <div class="ev-item">
             <h3><span class="dot" aria-hidden="true"></span>Apple Watch</h3>
@@ -206,11 +221,11 @@
           </div>
           <div class="ev-item">
             <h3><span class="dot" aria-hidden="true"></span>Widgets &amp; Siri</h3>
-            <p>Home- and lock-screen widgets for your calorie ring, streak, and next session. Ask Siri to "start my workout" and Improva opens at today's session.</p>
+            <p>Home- and lock-screen widgets for your calorie ring, streak, and next session. Ask Siri to "start my workout in Improva" and Improva opens at today's session.</p>
           </div>
           <div class="ev-item">
             <h3><span class="dot" aria-hidden="true"></span>Backup &amp; restore</h3>
-            <p>Save your workouts, plans, nutrition, recipes, streak and settings to a file you own — keep it in Files or iCloud Drive, or AirDrop it to a new phone — and restore it anytime. Your blocked-apps choice isn't included, because it's tied to the device, so you pick those apps again after restoring. Local-only shouldn't mean you can lose everything.</p>
+            <p>Save your workouts, plans, nutrition, recipes, streak and settings to a file you own (keep it in Files or iCloud Drive, or AirDrop it to a new phone) and restore it on this phone or a new one. Your blocked-apps choice isn't included, because it's tied to the device, so you pick those apps again after restoring. Local-only shouldn't mean you can lose everything.</p>
           </div>
         </div>
         <p class="disclaimer">Improva provides general fitness and nutrition estimates, not medical advice. Consult a qualified professional before starting a new program.</p>
@@ -229,8 +244,8 @@
           </div>
           <div class="step">
             <span class="num" aria-hidden="true">2</span>
-            <h3>Train — or your apps lock.</h3>
-            <p>Miss a session and your chosen distracting apps stay locked for the rest of the day. Bail on one you started and they stay locked for longer — you choose how long.</p>
+            <h3>Train, or your apps lock.</h3>
+            <p>Miss a session and your chosen distracting apps stay locked for the rest of the day. Bail on one you started and they stay locked for longer. You choose how long.</p>
           </div>
           <div class="step">
             <span class="num" aria-hidden="true">3</span>
@@ -253,11 +268,11 @@
           </figure>
           <figure class="shot-fig">
             <img class="shot" src="assets/screenshot-4.webp" alt="Micronutrient breakdown for the day, with vitamin D short of target" width="660" height="1434" loading="lazy">
-            <figcaption>Micronutrients, not just macros</figcaption>
+            <figcaption>Micronutrients as well as macros</figcaption>
           </figure>
           <figure class="shot-fig">
             <img class="shot" src="assets/screenshot-5.webp" alt="Shopping list built from a week of meals, with combined quantities" width="660" height="1434" loading="lazy">
-            <figcaption>A week of meals, one shopping list</figcaption>
+            <figcaption>One shopping list for a week of meals</figcaption>
           </figure>
         </div>
       </div>
@@ -274,6 +289,7 @@
     <section class="section" aria-labelledby="notify-h">
       <div class="container">
         <div class="notify">
+          <img loading="lazy" class="app-icon-img" src="assets/logo.png" alt="Improva app icon" width="512" height="512">
           <h2 id="notify-h">Get notified at launch</h2>
           <p>Improva isn't on the App Store yet. Want a heads-up when it lands?</p>
           <div class="notify-actions">

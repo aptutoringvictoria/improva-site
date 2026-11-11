@@ -16,11 +16,10 @@ website/
   404.html        Friendly styled 404 (GitHub Pages serves it automatically)
   robots.txt      Allow all + sitemap pointer
   sitemap.xml     index / support / privacy / terms
-  style.css       Shared theme (green #39D353 / indigo #5B5FEF)
-  assets/         Generated SVG brand assets + placeholder image slots
-    logo.svg        Header brand mark (generated placeholder — swappable)
-    favicon.svg     Favicon (generated placeholder — swappable)
-    og-image.svg    1200x630 social image (generated; export to PNG for scrapers)
+  style.css       Shared theme (the app's roles: green #34C759 / #1B7F45, indigo #5856D6)
+  assets/         App icon, screenshots, share image, fonts (see assets/README.txt)
+    fonts/          Archivo SemiExpanded SemiBold/Bold (woff2, self-hosted, OFL)
+    app-store-badge-black.svg / -white.svg  Apple's official badge, for launch (see the comment in index.html)
     README.txt      What to add / swap before launch
   README.md       This file
 ```
@@ -39,7 +38,7 @@ python3 -m http.server 8000   # then visit http://localhost:8000
 
 ## Deploy to GitHub Pages (free)
 
-1. Create a new GitHub repository (e.g. `fitness-locker-site`). This is a
+1. Create a new GitHub repository (e.g. `improva-site`). This is a
    separate project from the iOS app — do not add it to the app repo.
 2. Put the site at the repo root (or in a `/docs` folder). If you want the repo
    root served, move the contents of `website/` to the repo root; if you prefer
@@ -50,14 +49,14 @@ python3 -m http.server 8000   # then visit http://localhost:8000
    git add .
    git commit -m "Improva launch site"
    git branch -M main
-   git remote add origin git@github.com:<you>/fitness-locker-site.git
+   git remote add origin git@github.com:<you>/improva-site.git
    git push -u origin main
    ```
 4. In the repo: **Settings → Pages**. Under "Build and deployment", set
    **Source: Deploy from a branch**, pick **Branch: `main`** and the folder
    (**`/root`** or **`/docs`** to match step 2). Save.
 5. Wait ~1 minute. Your site is live at
-   `https://<you>.github.io/fitness-locker-site/`.
+   `https://<you>.github.io/improva-site/`.
 
 ### Custom domain (later)
 
@@ -80,17 +79,15 @@ Everything not yet finalised is a clearly-marked placeholder. Search the whole
 2. **Support email — DONE 2026-09-10 (`support@improva.fit`).** Was: confirm or replace the placeholder (footer +
    support page mailto + the optional notify mailto). Matches the app's
    `LegalLinks` placeholder.
-3. **Brand assets.** `assets/logo.svg`, `favicon.svg`, and `og-image.svg` are
-   generated placeholders in the app palette — swap them for the real app icon
-   whenever ready (keep the filenames or update the references). Also add a PNG
-   `og-image.png` (safest for social scrapers), `favicon.png`, and
-   `apple-touch-icon.png` — the pages already link them as fallbacks/TODO.
-4. **Screenshots.** Add `app-icon.png` + `screenshot-1..4.png` to `assets/`,
-   then swap the placeholder `<div class="placeholder …">` boxes in `index.html`
-   (hero + "A look inside" gallery) for `<img>` tags (keep the `alt` text). See
-   `assets/README.txt`.
-5. **App Store link.** Once the app is live, turn the "Coming to the App Store"
-   badge in `index.html` into a real link/badge pointing at the App Store URL.
+3. **Brand assets — DONE.** The real app icon (`logo.png`, `favicon.png`,
+   `apple-touch-icon.png`) and the share image (`og-image.png`, redrawn in the
+   new look 2026-11) are in. The generated placeholder SVGs were removed.
+4. **Screenshots — DONE.** `screenshot-1..5.webp` are real captures. Swap them
+   for new-look captures once the app's design part 2 lands (same filenames).
+5. **App Store link.** Once the app is live, replace the "Coming to the App
+   Store" text in `index.html` with Apple's official badge: the markup is
+   already there, commented out under it, and the badge files are in
+   `assets/`. Put the App Store URL in its `href`.
 6. **Legal copy.** Paste the finalised Privacy Policy and Terms drafts into the
    `<!-- CONTENT: … -->` blocks in `privacy.html` / `terms.html`, and set the
    "Last updated: [DATE]" line on each.
