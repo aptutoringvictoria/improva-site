@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Support | Improva</title>
   <meta name="description" content="Get help with Improva. Contact support and read answers to common questions.">
-  <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#1C1C1E" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#DDF7E5">
+  <meta name="color-scheme" content="light">
 
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website">
@@ -17,17 +17,18 @@
   <meta property="og:image" content="https://improva.fit/assets/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Improva app icon and Home screen, with the line: Earn your screen time. Train first.">
+  <meta property="og:image:alt" content="The Improva mark, three rising bars in green, indigo and coral, with the line: One app instead of four.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Support | Improva">
   <meta name="twitter:description" content="Get help with Improva. Contact support and read answers to common questions.">
   <meta name="twitter:image" content="https://improva.fit/assets/og-image.png">
-  <meta name="twitter:image:alt" content="Improva app icon and Home screen, with the line: Earn your screen time. Train first.">
+  <meta name="twitter:image:alt" content="The Improva mark, three rising bars in green, indigo and coral, with the line: One app instead of four.">
 
-  <link rel="icon" href="assets/favicon.png" type="image/png" sizes="64x64">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="canonical" href="https://improva.fit/support.html">
-  <link rel="preload" href="assets/fonts/ArchivoSemiExpanded-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/ArchivoSemiExpanded-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -35,12 +36,11 @@
 
   <header class="site-header">
     <nav class="nav" aria-label="Primary">
-      <a class="brand" href="index.html">
-        <span class="brand-mark has-img" aria-hidden="true"><img src="assets/logo.png" alt="" width="26" height="26"></span>
+      <a class="brand" href="index.html" aria-label="Improva home">
+        <svg viewBox="17 21 66 56" aria-hidden="true" focusable="false"><rect x="17" y="53" width="19" height="24" rx="5" fill="#1B7F45"/><rect x="40.5" y="38" width="19" height="39" rx="5" fill="#5856D6"/><rect x="64" y="21" width="19" height="56" rx="5" fill="#B0381F"/></svg>
         Improva
       </a>
       <div class="nav-links">
-        <a href="index.html">Home</a>
         <a href="support.html" aria-current="page">Support</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
@@ -49,64 +49,59 @@
   </header>
 
   <main id="main" class="doc">
-    <div class="container doc-wrap">
-      <h1>Support</h1>
-      <p class="doc-content">Need a hand with Improva? Email us and we'll help. There's no account and no contact form. Just reach out directly.</p>
-
-      <div class="support-cta">
-        <a class="btn btn-primary" href="mailto:support@improva.fit">Email support@improva.fit</a>
-      </div>
-
-      <section aria-labelledby="faq-h">
-        <h2 id="faq-h" style="margin-top:36px;">Frequently asked questions</h2>
-        <div class="faq">
-          <div class="faq-item">
-            <h3>Is my data private?</h3>
-            <p>Yes. Your training, food and health data stay on your device. There's no account, no tracking, and no ads. You can back up your data to a file you own whenever you like. A few small requests do leave your phone, such as a barcode lookup or the free-trial check; the <a href="privacy.html">privacy policy</a> lists all of them.</p>
-          </div>
-          <div class="faq-item">
-            <h3>How does the app blocking work?</h3>
-            <p>Improva uses Apple's Screen Time to lock the apps you choose when you miss a scheduled workout or cardio session: from the time you planned it until the end of that day, or for a period you choose if you start a session and leave early. They also lock during a focus block you schedule, and from your weekly planning deadline if next week has nothing planned, until you add something. The app never learns which apps you selected.</p>
-          </div>
-          <div class="faq-item">
-            <h3>Do I need an account?</h3>
-            <p>No. There's no sign-up and no login. You can start using the app right away.</p>
-          </div>
-          <div class="faq-item">
-            <h3>How do I back up my data?</h3>
-            <p>Export a backup file from Settings inside the app. The file is yours to keep and restore whenever you need it.</p>
-          </div>
-          <div class="faq-item">
-            <h3>Is the nutrition advice medical?</h3>
-            <p>No. The nutrition targets and logging are estimates to guide you, not medical advice. Talk to a qualified professional for medical guidance.</p>
-          </div>
-          <div class="faq-item">
-            <h3>Which devices are supported?</h3>
-            <p>Improva runs on iPhone, with Apple Watch support for workouts and cardio.</p>
-          </div>
+    <div class="doc-band">
+      <div class="wrap">
+        <h1 class="display">Support</h1>
+        <p class="lede">Need a hand with Improva? Email us and we'll help. There's no account and no contact form. Just reach out directly.</p>
+        <div class="support-cta">
+          <a class="btn btn-primary" href="mailto:support@improva.fit">Email support@improva.fit</a>
         </div>
+      </div>
+    </div>
+    <div class="wrap doc-wrap">
+      <section class="faq" aria-labelledby="faq-h">
+        <h2 id="faq-h">Frequently asked questions</h2>
+        <details>
+          <summary>Is my data private?</summary>
+          <p>Yes. Your training, food and health data stay on your device. There's no account, no tracking, and no ads. You can back up your data to a file you own whenever you like. A few small requests do leave your phone, such as a barcode lookup or the free-trial check; the <a href="privacy.html">privacy policy</a> lists all of them.</p>
+        </details>
+        <details>
+          <summary>How does the app blocking work?</summary>
+          <p>Improva uses Apple's Screen Time to lock the apps you choose when you miss a scheduled workout or cardio session: from the time you planned it until the end of that day, or for a period you choose if you start a session and leave early. They also lock during a focus block you schedule, and from your weekly planning deadline if next week has nothing planned, until you add something. The app never learns which apps you selected.</p>
+        </details>
+        <details>
+          <summary>Do I need an account?</summary>
+          <p>No. There's no sign-up and no login. You can start using the app right away.</p>
+        </details>
+        <details>
+          <summary>How do I back up my data?</summary>
+          <p>Export a backup file from Settings inside the app. The file is yours to keep and restore whenever you need it.</p>
+        </details>
+        <details>
+          <summary>Is the nutrition advice medical?</summary>
+          <p>No. The nutrition targets and logging are estimates to guide you, not medical advice. Talk to a qualified professional for medical guidance.</p>
+        </details>
+        <details>
+          <summary>Which devices are supported?</summary>
+          <p>Improva runs on iPhone, with Apple Watch support for workouts and cardio.</p>
+        </details>
       </section>
 
-      <p class="doc-content" style="margin-top:28px;">
-        Read our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Use</a>.
-      </p>
+      <p class="doc-foot">Read our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Use</a>.</p>
     </div>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
+    <div class="wrap footer-inner">
       <nav class="footer-links" aria-label="Footer">
         <a href="privacy.html">Privacy</a>
-        <span class="footer-sep" aria-hidden="true">·</span>
         <a href="terms.html">Terms</a>
-        <span class="footer-sep" aria-hidden="true">·</span>
         <a href="support.html">Support</a>
-        <span class="footer-sep" aria-hidden="true">·</span>
         <a href="mailto:support@improva.fit">support@improva.fit</a>
       </nav>
       <span class="copyright">© 2026 Improva</span>
     </div>
-    <div class="container">
+    <div class="wrap">
       <p class="footer-disclaimer">Improva provides general fitness and nutrition estimates, not medical advice. Consult a professional before starting a new program.</p>
     </div>
   </footer>

@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Page not found | Improva</title>
   <meta name="description" content="The page you were looking for could not be found.">
-  <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#1C1C1E" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#DDF7E5">
+  <meta name="color-scheme" content="light">
   <meta name="robots" content="noindex">
 
-  <link rel="icon" href="/assets/favicon.png" type="image/png" sizes="64x64">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/favicon.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-  <link rel="preload" href="/assets/fonts/ArchivoSemiExpanded-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/ArchivoSemiExpanded-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -19,12 +20,11 @@
 
   <header class="site-header">
     <nav class="nav" aria-label="Primary">
-      <a class="brand" href="/">
-        <span class="brand-mark has-img" aria-hidden="true"><img src="/assets/logo.png" alt="" width="26" height="26"></span>
+      <a class="brand" href="/" aria-label="Improva home">
+        <svg viewBox="17 21 66 56" aria-hidden="true" focusable="false"><rect x="17" y="53" width="19" height="24" rx="5" fill="#1B7F45"/><rect x="40.5" y="38" width="19" height="39" rx="5" fill="#5856D6"/><rect x="64" y="21" width="19" height="56" rx="5" fill="#B0381F"/></svg>
         Improva
       </a>
       <div class="nav-links">
-        <a href="/">Home</a>
         <a href="/support.html">Support</a>
         <a href="/privacy.html">Privacy</a>
         <a href="/terms.html">Terms</a>
@@ -33,7 +33,7 @@
   </header>
 
   <main id="main">
-    <div class="container notfound">
+    <div class="wrap notfound">
       <p class="code" aria-hidden="true">404</p>
       <h1>Page not found</h1>
       <p>The page you were looking for doesn't exist or may have moved. Let's get you back on track.</p>
@@ -42,19 +42,16 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
+    <div class="wrap footer-inner">
       <nav class="footer-links" aria-label="Footer">
         <a href="/privacy.html">Privacy</a>
-        <span class="footer-sep" aria-hidden="true">·</span>
         <a href="/terms.html">Terms</a>
-        <span class="footer-sep" aria-hidden="true">·</span>
         <a href="/support.html">Support</a>
-        <span class="footer-sep" aria-hidden="true">·</span>
         <a href="mailto:support@improva.fit">support@improva.fit</a>
       </nav>
       <span class="copyright">© 2026 Improva</span>
     </div>
-    <div class="container">
+    <div class="wrap">
       <p class="footer-disclaimer">Improva provides general fitness and nutrition estimates, not medical advice. Consult a professional before starting a new program.</p>
     </div>
   </footer>

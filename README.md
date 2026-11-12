@@ -9,16 +9,16 @@ trackers**. Works with JavaScript disabled.
 
 ```
 website/
-  index.html      Landing page (full feature breadth + JSON-LD + optional notify)
+  index.html      Landing page (one feature per band + JSON-LD + optional notify)
   privacy.html    Privacy Policy (shell — paste content in)
   terms.html      Terms of Use (shell — paste content in)
   support.html    Support / contact + FAQ
   404.html        Friendly styled 404 (GitHub Pages serves it automatically)
   robots.txt      Allow all + sitemap pointer
   sitemap.xml     index / support / privacy / terms
-  style.css       Shared theme (the app's roles: green #34C759 / #1B7F45, indigo #5856D6)
-  assets/         App icon, screenshots, share image, fonts (see assets/README.txt)
-    fonts/          Archivo SemiExpanded SemiBold/Bold (woff2, self-hosted, OFL)
+  style.css       Shared theme, light only (the app's ContrastPalette colours and washes)
+  assets/         Icon files, homepage screens (webp), share image, fonts (see assets/README.txt)
+    fonts/          Archivo SemiExpanded ExtraBold + Archivo SemiBold (woff2, self-hosted, OFL)
     app-store-badge-black.svg / -white.svg  Apple's official badge, for launch (see the comment in index.html)
     README.txt      What to add / swap before launch
   README.md       This file
@@ -82,8 +82,10 @@ Everything not yet finalised is a clearly-marked placeholder. Search the whole
 3. **Brand assets — DONE.** The real app icon (`logo.png`, `favicon.png`,
    `apple-touch-icon.png`) and the share image (`og-image.png`, redrawn in the
    new look 2026-11) are in. The generated placeholder SVGs were removed.
-4. **Screenshots — DONE.** `screenshot-1..5.webp` are real captures. Swap them
-   for new-look captures once the app's design part 2 lands (same filenames).
+4. **Screens - DONE.** The homepage uses the Nov 2026 captures: `hero-tiles`, `blocking-toggle`,
+   `lock-card`, `done-card`, `spare-key-card`, `coach-intake`, `coach-plan`, `micronutrients`,
+   `meal-week`, `shopping-list` (all `.webp`; see assets/README.txt). A paired-state Spare Key
+   capture can replace `spare-key-card.webp` later.
 5. **App Store link.** Once the app is live, replace the "Coming to the App
    Store" text in `index.html` with Apple's official badge: the markup is
    already there, commented out under it, and the badge files are in
